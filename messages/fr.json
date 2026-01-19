@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "À propos",
+    "mobileApp": "Application Mobile",
+    "partners": "Partenaires",
+    "contact": "Contact",
+    "getQuote": "Demander un devis"
+  },
+  "hero": {
+    "badge": "Énergie solaire au Maroc",
+    "headline": "Réduisez votre facture\nd'électricité grâce au solaire",
+    "subtext": "Solutions solaires professionnelles pour économiser sur vos factures d'énergie au Maroc.",
+    "ctaPrimary": "Demander une étude gratuite",
+    "ctaSecondary": "Découvrir l'application",
+    "trust1": "Installation professionnelle",
+    "trust2": "Économies garanties",
+    "trust3": "Support 24/7"
+  },
+  "whatWeDo": {
+    "title": "Ce que nous faisons",
+    "subtitle": "Solutions complètes d'énergie solaire conçues pour les foyers et entreprises marocains.",
+    "feature1": {
+      "title": "Installation solaire",
+      "description": "Installation professionnelle de systèmes solaires résidentiels et commerciaux."
+    },
+    "feature2": {
+      "title": "Consultation énergétique",
+      "description": "Conseils d'experts sur les solutions d'énergie renouvelable adaptées à vos besoins."
+    },
+    "feature3": {
+      "title": "Maintenance système",
+      "description": "Support et maintenance continus pour assurer des performances optimales."
+    }
+  },
+  "whySolar": {
+    "title": "Pourquoi l'énergie solaire",
+    "subtitle": "L'énergie solaire offre de nombreux avantages pour les foyers et entreprises marocains.",
+    "benefit1": {
+      "title": "Réduire les coûts énergétiques",
+      "description": "Réduisez considérablement vos factures d'électricité avec l'énergie solaire."
+    },
+    "benefit2": {
+      "title": "Impact environnemental",
+      "description": "Contribuez à un avenir plus propre et plus durable pour le Maroc."
+    },
+    "benefit3": {
+      "title": "Indépendance énergétique",
+      "description": "Générez votre propre électricité et réduisez votre dépendance au réseau."
+    },
+    "benefit4": {
+      "title": "Investissement à long terme",
+      "description": "Les systèmes solaires offrent des rendements pendant des décennies avec un entretien minimal."
+    }
+  },
+  "mobileApp": {
+    "badge": "Application mobile",
+    "title": "Tout ce dont vous avez besoin\ndans votre poche",
+    "description": "L'application Tawfir Energy vous donne accès à tous les outils nécessaires pour planifier, calculer et gérer votre projet solaire au Maroc.",
+    "feature1": {
+      "title": "Calculateur solaire",
+      "description": "Estimez la puissance nécessaire et le coût de votre installation solaire."
+    },
+    "feature2": {
+      "title": "Calculateur de pompage",
+      "description": "Calculez les besoins en énergie pour vos systèmes de pompage solaire."
+    },
+    "feature3": {
+      "title": "Estimation des économies",
+      "description": "Visualisez vos économies potentielles sur vos factures d'électricité."
+    },
+    "feature4": {
+      "title": "Recherche de techniciens",
+      "description": "Trouvez des techniciens certifiés près de chez vous."
+    },
+    "feature5": {
+      "title": "Demande de devis",
+      "description": "Demandez un devis personnalisé directement depuis l'application."
+    },
+    "cta1": "En savoir plus",
+    "cta2": "Télécharger l'app"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions complètes en énergie solaire pour particuliers et professionnels au Maroc.",
+    "service1": {
+      "title": "Étude & Devis solaire",
+      "description": "Analyse de vos besoins énergétiques et estimation précise du coût de votre installation solaire. Devis détaillé et personnalisé pour votre projet."
+    },
+    "service2": {
+      "title": "Installation solaire",
+      "description": "Installation professionnelle de systèmes solaires photovoltaïques pour résidences et entreprises. Équipe certifiée et matériel de qualité."
+    },
+    "service3": {
+      "title": "Maintenance & réparation",
+      "description": "Entretien régulier et réparation de vos installations solaires. Intervention rapide pour garantir le bon fonctionnement de votre système."
+    },
+    "service4": {
+      "title": "Pompage solaire",
+      "description": "Installation et maintenance de systèmes de pompage solaire pour l'irrigation et l'approvisionnement en eau. Solutions adaptées à vos besoins."
+    },
+    "service5": {
+      "title": "Techniciens certifiés",
+      "description": "Réseau de techniciens certifiés disponibles pour vos projets solaires. Expertise garantie et intervention dans tout le Maroc."
+    },
+    "contactCta": "Besoin d'un devis ou d'informations supplémentaires ?",
+    "contactButton": "Nous contacter"
+  },
+  "trust": {
+    "title": "Fiable pour les entreprises marocaines",
+    "subtitle": "Historique éprouvé de fourniture de solutions d'énergie solaire fiables.",
+    "stat1": "10+",
+    "stat1Label": "Années d'expérience",
+    "stat2": "500+",
+    "stat2Label": "Projets réalisés",
+    "stat3": "98%",
+    "stat3Label": "Satisfaction client",
+    "stat4": "24/7",
+    "stat4Label": "Support disponible"
+  },
+  "finalCta": {
+    "title": "Prêt à passer au solaire ?",
+    "description": "Obtenez une consultation gratuite et découvrez comment l'énergie solaire peut bénéficier à votre maison ou entreprise.",
+    "cta1": "Obtenir une consultation gratuite",
+    "cta2": "En savoir plus"
+  },
+  "footer": {
+    "description": "Solutions d'énergie renouvelable pour le Maroc.",
+    "services": "Services",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "solarInstallation": "Installation solaire",
+    "energyConsulting": "Consultation énergétique",
+    "maintenance": "Maintenance",
+    "aboutUs": "À propos de nous",
+    "ourTeam": "Notre équipe",
+    "careers": "Carrières",
+    "country": "Maroc",
+    "copyright": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  }
+}

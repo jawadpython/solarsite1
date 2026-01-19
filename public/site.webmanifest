@@ -1,0 +1,21 @@
+{
+  "name": "Tawfir Energy",
+  "short_name": "Tawfir Energy",
+  "description": "Solutions d'énergie solaire professionnelles au Maroc",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0B4F6C",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/"
+}
