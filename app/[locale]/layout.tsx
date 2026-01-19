@@ -106,7 +106,7 @@ export default function LocaleLayout({
       />
       <div dir={direction} className="flex flex-col min-h-screen">
         <Navbar locale={locale} />
-        <main className="flex-grow pt-20">{children}</main>
+        <main className="flex-grow pt-16">{children}</main>
         <Footer locale={locale} />
       </div>
     </>

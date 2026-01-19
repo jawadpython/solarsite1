@@ -33,12 +33,12 @@ export default function Navbar({ locale }: { locale: string }) {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-neutral-200/50">
+    <nav className="sticky top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-200 shadow-sm">
       <Container>
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link href={`/${locale}`} className="text-3xl font-black text-primary-500 hover:text-primary-600 transition-colors">
-              Tawfir<span className="text-secondary-500">Energy</span>
+            <Link href={`/${locale}`} className="text-xl font-bold text-neutral-900 hover:text-primary-600 transition-colors">
+              TAWFIR <span className="text-primary-600">ENERGY</span>
             </Link>
           </div>
 
@@ -48,10 +48,10 @@ export default function Navbar({ locale }: { locale: string }) {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative px-4 py-2 rounded-xl font-bold text-sm transition-all duration-300 ${
+                className={`px-4 py-2 rounded-[12px] text-sm font-medium transition-all duration-300 ${
                   isActive(link.href)
-                    ? 'text-primary-500 bg-primary-50'
-                    : 'text-neutral-700 hover:text-primary-500 hover:bg-neutral-50'
+                    ? 'text-primary-600 bg-primary-50'
+                    : 'text-neutral-700 hover:text-primary-600 hover:bg-neutral-50'
                 }`}
               >
                 {link.label}
@@ -59,7 +59,7 @@ export default function Navbar({ locale }: { locale: string }) {
             ))}
             <Link
               href={`/${locale}/contact`}
-              className="btn-primary ml-4 text-base px-6 py-2.5"
+              className="ml-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-2.5 rounded-[16px] text-sm font-semibold hover:shadow-lg hover:shadow-primary-500/30 transition-all duration-300"
             >
               {t.nav.getQuote}
             </Link>
@@ -76,11 +76,11 @@ export default function Navbar({ locale }: { locale: string }) {
             type="button"
           >
             <svg
-              className="w-7 h-7"
+              className="w-6 h-6"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2.5}
+              strokeWidth={2}
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -95,17 +95,17 @@ export default function Navbar({ locale }: { locale: string }) {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-6 pt-4 border-t border-neutral-200 bg-white">
-            <div className="flex flex-col space-y-2">
+          <div className="md:hidden pb-4 pt-2 border-t border-neutral-200 bg-white">
+            <div className="flex flex-col space-y-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={closeMenu}
-                  className={`px-4 py-3 rounded-xl font-bold transition-all duration-300 ${
+                  className={`px-4 py-3 rounded-[12px] text-sm font-medium transition-all duration-300 ${
                     isActive(link.href)
-                      ? 'text-primary-500 bg-primary-50'
-                      : 'text-neutral-700 hover:text-primary-500 hover:bg-neutral-50'
+                      ? 'text-primary-600 bg-primary-50'
+                      : 'text-neutral-700 hover:text-primary-600 hover:bg-neutral-50'
                   }`}
                 >
                   {link.label}
@@ -114,7 +114,7 @@ export default function Navbar({ locale }: { locale: string }) {
               <Link
                 href={`/${locale}/contact`}
                 onClick={closeMenu}
-                className="btn-primary w-full mt-4 text-center"
+                className="bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-3 rounded-[16px] text-sm font-semibold hover:shadow-lg transition-all duration-300 w-full mt-2 text-center"
               >
                 {t.nav.getQuote}
               </Link>

@@ -9,45 +9,33 @@ export default function Trust({ locale }: { locale: string }) {
     {
       value: t.trust.stat1,
       label: t.trust.stat1Label,
-      color: 'primary',
+      color: 'text-primary-600',
     },
     {
       value: t.trust.stat2,
       label: t.trust.stat2Label,
-      color: 'secondary',
+      color: 'text-secondary-600',
     },
     {
       value: t.trust.stat3,
       label: t.trust.stat3Label,
-      color: 'accent',
+      color: 'text-accent-600',
     },
     {
       value: t.trust.stat4,
       label: t.trust.stat4Label,
-      color: 'success',
+      color: 'text-success-600',
     },
   ];
-
-  const colorClasses = {
-    primary: 'text-primary-500',
-    secondary: 'text-secondary-500',
-    accent: 'text-accent-500',
-    success: 'text-success-500',
-  };
   
   return (
-    <section className="section-padding bg-gradient-to-br from-primary-500 to-secondary-500 relative overflow-hidden">
-      {/* Pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
-      </div>
-      
-      <Container className="relative z-10">
-        <div className="text-center mb-20 animate-slide-up">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6">
+    <section className="section-padding bg-gradient-to-br from-primary-50 via-secondary-50 to-accent-50">
+      <Container>
+        <div className="mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
             {t.trust.title}
           </h2>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             {t.trust.subtitle}
           </p>
         </div>
@@ -56,13 +44,12 @@ export default function Trust({ locale }: { locale: string }) {
           {trustPoints.map((point, index) => (
             <div 
               key={index} 
-              className="card-modern bg-white/95 backdrop-blur-sm text-center animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="service-card text-center"
             >
-              <div className={`text-6xl md:text-7xl font-black mb-4 ${colorClasses[point.color as keyof typeof colorClasses]}`}>
+              <div className={`text-5xl md:text-6xl font-bold mb-3 ${point.color}`}>
                 {point.value}
               </div>
-              <div className="text-neutral-600 font-bold text-lg">
+              <div className="text-neutral-600 font-semibold">
                 {point.label}
               </div>
             </div>

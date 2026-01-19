@@ -6,32 +6,25 @@ import type { Locale } from '@/lib/i18n';
 export default function FinalCTA({ locale }: { locale: string }) {
   const t = getTranslations(locale as Locale);
   return (
-    <section className="section-padding bg-neutral-900 relative overflow-hidden">
-      {/* Geometric shapes */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary-500/10 rounded-full blur-3xl"></div>
-      
-      <Container className="relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-slide-up">
-          <div className="inline-block px-4 py-2 bg-primary-500/20 border border-primary-500/30 rounded-full mb-8">
-            <span className="text-sm font-bold text-primary-400 uppercase tracking-wider">Get Started</span>
-          </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
+    <section className="section-padding bg-gradient-to-br from-primary-600 via-primary-500 to-secondary-500">
+      <Container>
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             {t.finalCta.title}
           </h2>
-          <p className="text-xl md:text-2xl text-neutral-300 mb-12 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-2xl mx-auto">
             {t.finalCta.description}
           </p>
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href={`/${locale}/contact`}
-              className="btn-primary bg-white text-neutral-900 hover:bg-neutral-100 hover:shadow-2xl hover:shadow-white/20"
+              className="bg-white text-primary-700 px-10 py-4 rounded-[16px] font-semibold hover:bg-neutral-50 hover:shadow-xl transition-all duration-300 inline-block"
             >
               {t.finalCta.cta1}
             </Link>
             <Link
               href={`/${locale}/about`}
-              className="btn-secondary bg-transparent border-2 border-white text-white hover:bg-white/10"
+              className="bg-white/10 border-2 border-white/30 text-white px-10 py-4 rounded-[16px] font-semibold hover:bg-white/20 transition-all duration-300 inline-block"
             >
               {t.finalCta.cta2}
             </Link>
